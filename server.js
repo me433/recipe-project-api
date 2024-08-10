@@ -7,12 +7,9 @@ app.use(express.json());
 
 const PORT = process.env.PORT || 3500;
 
-const ingredients = ["wortel", "ajuin", "zoete aardappel"]
-
-//Fetch all ingredient tags
-app.get('/api/ingredients', function (req, res) {
-    res.status(200).sendFile(path.join(__dirname, "ingredients.json"))
- })
+app.use('/api/recipes', require('./routes/api/recipes.js'))
+app.use('/api/ingredients', require('./routes/api/ingredients.js'))
+app.use('/api/labels', require('./routes/api/labels.js'))
 
 app.listen(PORT, () => {
     console.log("Server Listening on PORT:", PORT);

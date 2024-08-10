@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "title": "Pasta pesto",
+        "description": "Grandma's recipe",
+        "ingredients": ["paprika"],
+        "labels": ["hoofdgerecht"],
+        "pdf": "none"
+    },
+    {
+        "id": 2,
+        "title": "Shpeckie's Burrito",
+        "description": "Make it in advance",
+        "ingredients": ["paprika", "wortel"],
+        "labels": ["hoofdgerecht", "tussendoortje"],
+        "pdf": "none"
+    }
+]
